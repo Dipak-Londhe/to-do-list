@@ -544,14 +544,12 @@ body{
 
 
 
-.input:active{
-    height:16vh;
-}
+
  
 #input{
 
     width:78%;
-    height: 69%;
+    height: 59%;
     font-size: 112%;
 }
 
@@ -560,7 +558,7 @@ body{
 #add_item{
 
     width:12%;
-    height: 69%;
+    height: 59%;
     margin-right:2%;
     font-size: 104%;
     
@@ -585,18 +583,25 @@ table{
 
 .row{
 
-     height:9.2vh;
+     height:9vh;
      width:100%;
-     font-size: 124%;
+     font-size: 129%;
      box-shadow: 2px 2px 11px white;
      }     
     
+    .list{
+        
+        padding-left:4px;
+        padding-right:4px;
+        width:76%;
+        
+    }
 
 
 .but1 , .delete{
 
 
-   
+    width:10%;
     font-size: 124%;
  
 
