@@ -538,15 +538,21 @@ body{
 
 
     width:93%;
-    height:10vh;
+    height:12vh;
    
+}
+
+
+
+.input:active{
+    height:13vh;
 }
  
 #input{
 
     width:78%;
-    height: 44%;
-    font-size: 102%;
+    height: 54%;
+    font-size: 112%;
 }
 
 
@@ -554,7 +560,7 @@ body{
 #add_item{
 
     width:12%;
-    height: 44%;
+    height: 54%;
     margin-right:2%;
     font-size: 104%;
     
@@ -579,9 +585,9 @@ table{
 
 .row{
 
-     height:4.2vh;
+     height:7.2vh;
      width:100%;
-     font-size: 84%;
+     font-size: 104%;
      box-shadow: 2px 2px 11px white;
      }     
     
@@ -591,14 +597,14 @@ table{
 
 
    
-    font-size: 86%;
+    font-size: 104%;
  
 
 }
 
 .done1{
 
-    font-size: 86%;
+    font-size: 104%;
     
 }
   
