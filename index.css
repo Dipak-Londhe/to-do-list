@@ -258,8 +258,16 @@ marquee{
 .srno{
     color: red;
     text-align: center;
+    width:4%;
 }
 
+.list{
+    width:82%;
+}
+
+.done{
+    width:7%;
+}
 .but1:hover , .delete:hover{
   
     color: white;
@@ -549,8 +557,8 @@ body{
 #input{
 
     width:78%;
-    height: 59%;
-    font-size: 112%;
+    height: 51%;
+    font-size: 114%;
 }
 
 
@@ -558,9 +566,9 @@ body{
 #add_item{
 
     width:12%;
-    height: 59%;
+    height: 51%;
     margin-right:2%;
-    font-size: 104%;
+    font-size: 114%;
     
     
 }
@@ -593,7 +601,8 @@ table{
         
         padding-left:4px;
         padding-right:4px;
-        width:76%;
+        width:60%;
+    
         
     }
 
@@ -601,10 +610,26 @@ table{
 .but1 , .delete{
 
 
-    width:10%;
-    font-size: 124%;
+    width:18%;
+    font-size: 123%;
  
 
+}
+    
+    
+.but1{
+    
+    
+    padding-left: 0px;
+
+}
+
+
+.delete{
+ 
+    padding-left: 5px;
+   
+    
 }
 
 .done1{
