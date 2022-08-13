@@ -27,13 +27,13 @@ function display()
      str+=`
 
    <tr class="row">
-          <td class="srno" style="width:4%">${index+1}</td>
-          <td class="list" style="width:82%">${element}</td>
+          <td class="srno" >${index+1}</td>
+          <td class="list" >${element}</td>
     
           
-          <td class="done" style="width:7%"><i class="fa-solid fa-pen-to-square but1 "  onclick="update(${index})"></i></td>
+          <td class="done" ><i class="fa-solid fa-pen-to-square but1 "  onclick="update(${index})"></i></td>
           
-          <td class="done" style="width:7%"><i class="fa-solid fa-trash delete " onclick="deleted(${index})"></i></td>
+          <td class="done" ><i class="fa-solid fa-trash delete " onclick="deleted(${index})"></i></td>
           
 
       </tr>
