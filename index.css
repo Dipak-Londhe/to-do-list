@@ -1,0 +1,612 @@
+*{
+    margin:0px;
+    padding:0px;
+    width: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva,
+     Verdana, sans-serif;
+}
+
+body{
+    width:100%;
+    
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background:linear-gradient(to right ,#ff7057 , #ffa7ba);
+
+   
+}
+
+header{
+    width:100%;
+    background:linear-gradient(to right , #ff416c,#ff4b2b);
+    color:white;
+    height:90%;
+    margin-top: -44px;
+    padding-top: 3%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, 
+    Verdana, sans-serif;
+}
+
+.info{
+    width:80%;
+    border-color: black;
+    border:1px solid black;
+    border-radius:2px;
+    margin: auto;
+    text-align: center;
+    margin-top:44px;
+    background: transparent;
+    border:none;
+    
+}
+
+
+.info2{
+
+     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, 
+     Verdana, sans-serif;
+
+     margin:auto;
+     padding: auto;
+     margin-top:12px;
+     border: none;
+
+}
+
+
+h2{
+    animation: bounce 16s infinite ;
+    transition: ease;
+    transition-delay: 10s;
+    
+}
+
+
+@keyframes bounce
+{
+
+    0%{
+
+        color:white;
+           
+    }
+    20%{
+        
+        color:#00CCFF;
+    }
+    60%{
+       
+        color:#00FF00;
+    }
+    80%{
+
+        color:black;
+
+    }
+    
+}
+
+h3{
+    color: white;
+}
+
+.input{
+    width:80%;
+    border-color: black;
+    border:1px solid black;
+    border-radius:2px;
+    
+    margin: auto;
+    text-align: center;
+    margin-top:44px;
+    background: transparent;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    height:13vh;
+    background-color: black;
+    
+    background:linear-gradient(to right , #ff6d8f,#ff735a);
+    border: none;
+    
+    box-shadow:10px 10px 44px  #ff416c;
+    
+}
+
+#input{
+
+    width:78%;
+    height: 40%;
+    margin-left:5%;
+    margin-bottom: 0%;
+    font-size: 120%;
+    outline: none;
+
+
+
+    padding-left: 2px;
+    /* border-color: #00FF00; */
+   
+    border-radius: 2px ;
+    box-shadow: 3px 3px 25px white;
+    outline: none;
+    border: none;
+
+
+
+}
+
+#add_item{
+
+    width:10%;
+    height: 50%;
+    margin-right:4%;
+    font-size: 184%;
+    background-color:#00FF00;
+    color:white;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 3px 3px 25px white;
+    transition:1s;
+    
+}
+
+.list_done{
+    
+    width:80%;
+    height: 10vh;
+    border-color: black;
+
+    border-radius:0px;
+    
+    margin: auto;
+    margin-top:24px;
+
+    padding-top: 3%;
+    font-size: 140%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, 
+    Verdana, sans-serif;
+    
+    
+    color:white;
+    
+}
+table{
+    width:80%;
+    
+    margin: auto;
+    text-align: center;
+    
+    opacity: 0.9;
+    border-spacing: 0 15px;
+     
+}
+
+marquee{
+
+
+    text-shadow: 2px 2px 14px white;
+}
+
+.row{
+
+     height:8.2vh;
+     width:100%;
+     font-size: 144%;
+     background-color:rgba(255, 255, 255, 0.99);
+     background:linear-gradient(to right , #ff6e90,#ff6044);
+     color: white;
+    
+    text-align: start;
+
+    box-shadow: 4px 4px 11px white;
+    color:black;
+
+
+     }     
+     
+.list
+{
+    
+    word-break: break-all;
+    
+}
+
+
+
+.but1 , .delete{
+
+
+    width:50%;
+    font-size: 126%;
+    border-radius: 4px;
+    margin-bottom: 1%;
+
+    /* background-im */
+    color:red;
+    transition:0.6s;
+    text-align: center;
+
+    text-shadow: 2px 2px 8px white;
+
+}
+
+.done1{
+
+    width:50%;
+    font-size: 126%;
+    border-radius: 4px;
+    margin-bottom: 1%;
+
+    /* background-im */
+    color:red;
+    transition:0.6s;
+    text-align:end;
+
+    text-shadow: 2px 2px 8px white;
+
+    
+
+}
+
+
+.srno{
+    color: red;
+    text-align: center;
+}
+
+.but1:hover , .delete:hover{
+  
+    color: white;
+    transform:scale(1.2);
+}
+
+.done1:hover{
+  
+    color: white;
+    transform:scale(1.2);
+}
+
+
+.done1:active{
+  
+    color: red;
+    /* transform:scale(0.8); */
+
+}
+
+.but1:active , .delete:active{
+  
+    color: red;
+    /* transform:scale(0.8); */
+
+}
+
+.row:hover{
+    background:linear-gradient(to right , rgb(255, 201, 201),rgb(255, 124, 124));
+    color:black;
+    transform: scale(1.01);
+}
+
+
+.but2{
+
+    height:8vh;
+    width:20%;
+    font-size: 144%;
+    border-radius: 4px;
+    background-color:red;
+    border: none;
+    color:white;
+    box-shadow: 8px 8px 11px white;
+
+    margin:0% 40% 2% 40%;
+    transition:1s;
+
+}
+
+.but2:hover{
+
+    transform:scale(1.1);
+}
+
+.but2:active{
+    background: linear-gradient(to right , #ff416c,#ff4b2b);
+}
+
+#add_item:hover{
+
+    transform:scale(1.1);
+
+}
+
+#add_item:active{
+
+
+    background:linear-gradient(to right , #ff416c,#ff4b2b);
+
+}
+
+.change{
+   
+    border:none;
+    outline: none;
+    border-bottom:2px solid white;
+    background: linear-gradient(to right , #ff6e90,#ff6044);
+    font-size: 102%;
+}
+
+
+.change:hover{
+
+
+    background:linear-gradient(to right , rgb(255, 201, 201),rgb(254, 130, 130));
+}
+
+
+
+
+ @media (min-width:800px) and (max-width:1000px) {
+
+
+    header{
+        padding-top:79px;
+    }
+   
+.input{
+
+
+    width:85%;
+    height:11vh;
+   
+}
+
+#input{
+
+    width:78%;
+    height: 37%;
+}
+
+#add_item{
+
+    width:10%;
+    height: 46%;
+    margin-right:4%;
+    font-size: 164%;
+    
+    
+}
+
+.list_done{
+    
+    width:85%;
+    height: 8vh;
+
+
+
+    
+}
+table{
+    width:85%;
+     
+}
+
+
+
+.row{
+
+     height:6vh;
+     width:100%;
+     font-size: 134%;
+
+     }     
+    
+
+
+.but1 , .delete{
+
+
+    width:50%;
+    font-size: 106%;
+    border-radius: 4px;
+
+}
+
+.done1{
+
+    font-size: 106%;
+    
+}
+  
+    
+   
+   
+    
+    
+}
+
+@media  (min-width:500px) and (max-width:800px){
+    
+      
+.input{
+
+
+    width:90%;
+    height:10vh;
+   
+}
+
+#input{
+
+    width:78%;
+    height: 37%;
+}
+
+#add_item{
+
+    width:9%;
+    height: 44%;
+    margin-right:4%;
+    font-size: 164%;
+    
+    
+}
+
+.list_done{
+    
+    width:90%;
+    height: 7vh;
+
+    
+}
+table{
+    width:90%;
+     
+}
+
+
+
+.row{
+
+     height:6.2vh;
+     width:100%;
+     font-size: 124%;
+
+     }     
+    
+
+
+.but1 , .delete{
+
+
+   
+    font-size: 96%;
+ 
+
+}
+
+.done1{
+
+    font-size: 96%;
+    
+}
+  
+.but2{
+
+    font-size: 130%;
+    width:33%;
+}
+    
+   
+   
+    
+}
+
+
+@media  (min-width:260px) and (max-width:500px){
+    
+        
+
+body{
+    width:100%;
+}
+
+    
+    
+    header{
+        padding-top:37px;
+        width:100%;
+        margin-right:0px;
+      }
+
+   h2{
+    text-shadow:44px 44px 1428px white;
+   }
+
+      marquee{
+        font-size: 16px;
+        text-shadow: 2px 2px 5px white;
+        
+      }
+
+.input{
+
+
+    width:93%;
+    height:10vh;
+   
+}
+ 
+#input{
+
+    width:78%;
+    height: 44%;
+    font-size: 102%;
+}
+
+
+
+#add_item{
+
+    width:12%;
+    height: 44%;
+    margin-right:2%;
+    font-size: 104%;
+    
+    
+}
+
+.list_done{
+    
+    width:80%;
+    height: 7vh;
+    font-size:16px;
+    
+}
+
+
+table{
+    width:95%;
+     
+}
+
+
+
+.row{
+
+     height:4.2vh;
+     width:100%;
+     font-size: 84%;
+     box-shadow: 2px 2px 11px white;
+     }     
+    
+
+
+.but1 , .delete{
+
+
+   
+    font-size: 86%;
+ 
+
+}
+
+.done1{
+
+    font-size: 86%;
+    
+}
+  
+.but2{
+
+    font-size: 110%;
+    width:26%;
+    height:80%;
+} 
+    
+}
