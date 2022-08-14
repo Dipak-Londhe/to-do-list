@@ -199,8 +199,9 @@ marquee{
      width:100%;
      font-size: 144%;
      background-color:rgba(255, 255, 255, 0.99);
-     background:linear-gradient(to right , #ff6e90,#ff6044);
-     color: white;
+/*      background:linear-gradient(to right , #ff6e90,#ff6044); */
+    background-color:white;
+     color: black;
     
     text-align: start;
 
