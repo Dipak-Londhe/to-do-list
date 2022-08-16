@@ -10,7 +10,7 @@ function display()
    list_array=[];
    str="";
    
-   let json1=localStorage.getItem('itemJson');
+   let json1=localStorage.getItem('itemJson1');
    if(JSON.parse(json1)==null)
    {
       return;
@@ -18,7 +18,7 @@ function display()
    }
    else
    {
-      let list_array1=localStorage.getItem('itemJson');
+      let list_array1=localStorage.getItem('itemJson1');
    list_array=JSON.parse(list_array1);
 
 
@@ -27,13 +27,13 @@ function display()
      str+=`
 
    <tr class="row">
-          <td class="srno" >${index+1}</td>
-          <td class="list" >${element}</td>
+          <td class="srno" style="width:4%">${index+1}</td>
+          <td class="list" style="width:82%">${element}</td>
     
           
-          <td class="done" ><i class="fa-solid fa-pen-to-square but1 "  onclick="update(${index})"></i></td>
+          <td class="done" style="width:7%"><i class="fa-solid fa-pen-to-square but1 "  onclick="update(${index})"></i></td>
           
-          <td class="done" ><i class="fa-solid fa-trash delete " onclick="deleted(${index})"></i></td>
+          <td class="done" style="width:7%"><i class="fa-solid fa-trash delete " onclick="deleted(${index})"></i></td>
           
 
       </tr>
@@ -70,19 +70,19 @@ add.addEventListener("click",()=>{
      else
      {
 
-        if(localStorage.getItem('itemJson')==null)
+        if(localStorage.getItem('itemJson1')==null)
         {   
             list_array.push(input);
-            localStorage.setItem('itemJson',JSON.stringify(list_array));
+            localStorage.setItem('itemJson1',JSON.stringify(list_array));
             
         }
         else
         {
-            let arraystring = localStorage.getItem('itemJson');
+            let arraystring = localStorage.getItem('itemJson1');
             list_array=JSON.parse(arraystring);
 
             list_array.push(input);
-       localStorage.setItem('itemJson',JSON.stringify(list_array));
+       localStorage.setItem('itemJson1',JSON.stringify(list_array));
         }
 
         document.getElementById("input").value="";
@@ -112,7 +112,7 @@ function deleted(index)
 
    list_array.splice(index,1);
 
-   localStorage.setItem('itemJson',JSON.stringify(list_array));
+   localStorage.setItem('itemJson1',JSON.stringify(list_array));
 
    count=count-1;
    }
@@ -191,7 +191,7 @@ function upadte_list(index)
    }
      list_array[index]=change1.value;
 
-     localStorage.setItem('itemJson',JSON.stringify(list_array)); 
+     localStorage.setItem('itemJson1',JSON.stringify(list_array)); 
    display();
 
 }
