@@ -1,5 +1,13 @@
 
 
+
+
+
+
+
+
+
+
 let add = document.getElementById("add_item");
 let str;
 let list_array;
@@ -120,6 +128,24 @@ function deleted(index)
 
 }
 
+function deleted_1(index)
+{
+  
+      let cancel1=document.getElementById("table1");
+   let cancel=cancel1.getElementsByClassName("row")[index];
+   cancel.innerHTML="";
+   cancel.style.display="none";
+
+   list_array.splice(index,1);
+
+   localStorage.setItem('itemJson1',JSON.stringify(list_array));
+
+   count=count-1;
+   
+   
+
+}
+
 
 
 
@@ -135,7 +161,7 @@ function delete_all()
    let count2=count;console.log(count2);
    for(let i=0 ; i<count2 ; i++)
    {
-        deleted(i);
+        deleted_1(i);
    } 
    count=0  ;
 
